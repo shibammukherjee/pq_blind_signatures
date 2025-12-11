@@ -1,0 +1,5 @@
+✅ 4x4 linear transformation matrix for x ↦ x^2 over GF(2^4):
+[1 0 1 0]
+[0 0 1 0]
+[0 1 0 1]
+[0 0 0 1]

@@ -1,0 +1,14 @@
+[package]
+name = "blind-signatures-conservative-deg16"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+mayo-c-sys = { path = "../mayo-c-sys" }
+vole-keccak-deg16-then-mayo-sys = { path = "../vole-keccak-deg16-then-mayo-sys" }
+criterion = {version = "0.6", features = ["html_reports"]}
+rand = "0.9.2"
+
+[[bench]]
+name = "blind_sig_conservative_deg16"
+harness = false
