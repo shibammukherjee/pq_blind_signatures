@@ -1,15 +1,15 @@
-# PoMFRIT: Proof of MAYO for Forgery-Resistant Identity Tokens
+# Concretely efficient blind signatures based on VOLE-in-the-head proofs and the MAYO trapdoor
 
 ## Overview
 
-This repository contains an implementation of the PoMFRIT blind signature scheme. It implements the following constructions.
+This repository contains an implementation of blind signature (BS) scheme. It implements the following constructions.
 
-- PoMFRIT from SHAKE256 + MAYO
+- BS from SHAKE256 + MAYO
     - (1) SHAKE256 with commitments in every round (blind-signatures-conservative)
     - (2) SHAKE256 with commitments in every 6th round, 4 rounds forward and 2 rounds backward (blind-signatures-deg16)
-- PoMFRIT from RainHash + MAYO
+- BS from RainHash + MAYO
     - (3) Rainhash with commitments in every round, total 7 rounds (blind-signatures-conservative-rain)
-- PoMFRIT from One-More-MAYO
+- BS from One-More-MAYO
     - uses MAYO preimage sampling MAYO signature scheme (blind-signatures)
 
 The VOLEith technique is used from the NIST round 1 submission of [FAEST](https://FAEST.info/) and combined with the round 2 submission of [MAYO](https://github.com/PQCMayo/MAYO-C).
@@ -18,7 +18,7 @@ These are combined with the VOLEith proof framework from FAEST, which has 2 vers
 
 ## Project Structure
 ```
-PoMFRIT/                                    # a simplified overview
+PQ_BLIND_SIGNATURES/                                    # a simplified overview
 ├── benchmarks/                             # Benchmark evaluations
 ├── blind-signatures/                       # One-More MAYO
  ├── src/
