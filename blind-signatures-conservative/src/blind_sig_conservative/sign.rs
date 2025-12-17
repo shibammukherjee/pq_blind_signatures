@@ -163,7 +163,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
@@ -233,7 +233,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
@@ -303,7 +303,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
@@ -373,7 +373,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
@@ -444,7 +444,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
@@ -514,7 +514,7 @@ mod test {
             sign3 += duration.as_micros() as f64 / 1_000.0;
             
             start = Instant::now();
-            bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r);
+            assert!(bs.verify(&mut epk_u8, &m, &mut sig, &mut additional_r));
             duration = start.elapsed();
             verify += duration.as_micros() as f64 / 1_000.0;
 
