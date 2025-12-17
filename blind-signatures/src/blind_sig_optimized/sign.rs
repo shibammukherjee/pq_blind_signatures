@@ -169,8 +169,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -179,7 +179,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-128s - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
         }
 
@@ -239,8 +239,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -249,7 +249,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-128f - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
         }
 
@@ -309,8 +309,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -319,7 +319,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-192s - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
         }
 
@@ -379,8 +379,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -389,7 +389,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-192f - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
 
         }
@@ -450,8 +450,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -460,7 +460,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-256s - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
 
         }
@@ -521,8 +521,8 @@ mod test {
             verify += duration.as_micros() as f64 / 1_000.0;
 
             // if i == 0 {
-            //     println!("s1 + bsig len {:?}", s1.len() + bsig.len());
-            //     println!("sig len {:?}", sig.proof.len());
+            //     println!("s1 + bsig len {:?}", (s1.len() + bsig.len()) as f64 / 1024.0);
+            //     println!("sig len {:?}", sig.proof.len() as f64 / 1024.0);
             // }
 
             // if (i + 1) % 10 == 0 {
@@ -531,7 +531,7 @@ mod test {
 
             if i == (iter as i32) - 1 {
                 println!("One-More-MAYO-256f - {}, {}, {}, {}, {}, {}", 
-                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, s1.len() + bsig.len(), sig.proof.len());
+                sign1 / iter, sign2 / iter, sign3 / iter, verify / iter, (s1.len() + bsig.len()) as f64 / 1024.0, sig.proof.len() as f64 / 1024.0);
             }
 
         }
