@@ -1,5 +1,5 @@
 
-echo "Scheme - Sig1 (ms), Sig2 (ms), Sig3 (ms), Ver (ms), Comm (B), BS (B)" > bench_log.txt
+echo "Scheme - Sig1 (ms), Sig2 (ms), Sig3 (ms), Ver (ms), Comm (KB), BS (KB)" > bench_log.txt
 echo "--------------------------------------------------------" >> bench_log.txt
 
 git submodule update --init --recursive
